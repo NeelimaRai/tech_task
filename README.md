@@ -3,7 +3,7 @@
 ## Introduction:
 
 This is an automated script written to test some functionalities of the housing page of the website https://madrid.craigslist.org/
-The script `madrid_craigslist_housing.robot` uses the file `keywords.robot`. This script will work for both chrome and firefox 
+The script `craigslist.robot` uses the file `keywords.robot`. This script will work for both chrome and firefox 
 browsers. The details on prerequisites and how to run the script are mentioned below.
 
 ## Dependencies:
@@ -33,7 +33,7 @@ Add the python path to the system environment variable PATH.
 Also, add the path to the directory that contains the webdrivers.
 
 For Mac:
-Add the path to .bash_profile or .zsh_profile whichever you use and save the file. Then run "source .zsh_profile" to reload the file.
+Add the path to `.bash_profile` or `.zsh_profile` whichever you use and save the file. Then run `source .zsh_profile` to reload the file.
 
 Install webdrivers for chrome and firefox
 
@@ -46,7 +46,7 @@ Otherwise you might see errors like:
 	File or directory not found
 	zsh: robot: command not found…
 
-To run the robot test file, cd to the folder `/tech-task/TestCases/` use the following command:
+To run the robot test file, cd to the folder `/tech_task/TestCases/` use the following command:
 
 	robot -d results -v browser:chrome --include 'FUNCTIONAL' craigslist.robot
 	
